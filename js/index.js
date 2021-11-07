@@ -28,18 +28,40 @@ const startGame = () => {
 const loseGame = () => {}
 
 // TODO
+const moveSnake = (keyPress) => {}
+
+// TODO
+const growSnake = () => {}
+
+// TODO
 const gamePlay = (snakeInitialPosition) => {
   const initialHeadPos = snakeInitialPosition[0];
   const initialBodyPos = snakeInitialPosition[1];
   window.addEventListener('keyup', (event) => {
-    console.log(event.key);
+    if (event.key === "ArrowUp") {
+      moveSnake(event.key);
+      growSnake();
+      loseGame();
+    } else if (event.key === "ArrowDown") {
+      moveSnake(event.key);
+      growSnake();
+      loseGame();
+    } else if (event.key === "ArrowRight") {
+      moveSnake(event.key);
+      growSnake();
+      loseGame();
+    } else if (event.key === "ArrowLeft") {
+      moveSnake(event.key);
+      growSnake();
+      loseGame();
+    }
   });
 }
 
 const playButton = document.getElementById('playbutton');
 playButton.addEventListener('click', (event) => {
   if (event.currentTarget.innerText === "Start") {
-    event.currentTarget.innerText = "Stop";
+    event.currentTarget.innerText = "Reset";
     gamePlay(startGame());
   } else {
     event.currentTarget.innerText = "Start";
