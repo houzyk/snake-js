@@ -1,0 +1,65 @@
+body {
+  background-color: #092327;
+  margin: 0;
+  padding: 0;
+}
+
+/* * Playbutton */
+
+#playbutton {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFA;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #EE8434;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+#playbutton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* * Snake Grid */
+
+.gameboard-noplay {
+  height: 60vh;
+  margin-top: 10vh;
+  width: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00A9A5;
+}
+
+.gameboard-play {
+  height: 60vh;
+  margin-top: 10vh;
+  width: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+.gridrow {
+  height: 5%;
+  background-color: #00A9A5;
+  display: flex;
+}
+
+.grid {
+  flex-grow: 1;
+  transition: all 0.3s;
+}
+
+/* * Snake + Food */
+
+.snake-active {
+  background-color: #FFFFFA;
+}
+
+.food {
+  background-color: #A74482;
+}
