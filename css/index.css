@@ -56,7 +56,11 @@ body {
 
 /* * Snake + Food */
 
-.snake-active {
+.snake-head {
+  background-color: #FFFFFA;
+}
+
+.snake-body {
   background-color: #FFFFFA;
 }
 
